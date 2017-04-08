@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>
+        绵阳市城建档案馆
+    </title>
+    <meta name="keywords" content="城建档案、绵阳">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" href="css/default.css" rel="stylesheet">
+    <link href="new_images/tpimages/voteresult_p_1.css" rel="stylesheet">
+    <link href="new_images/tpimages/voteresult_1.css" rel="stylesheet">
+    <script type="text/javascript" src="new_images/tpimages/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jquery.pack.js"></script>
+    <!--2个内页幻灯片-->
+    <script type="text/javascript" src="js/jquery.slides.js"></script>
+    <script type="text/javascript" src="js/zzsc.js"></script>
+    <!--3个内页tp-->
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/slides-1.1.1-min.js"></script>
+    <!--JQ+css引用地址-->
+    <script type="text/javascript">
+        //禁用右击页面图片
+        var clickmessage = "图片不可复制！"
+        function disableclick(e) {
+            if (document.all) {
+                if (event.button == 2 || event.button == 3) {
+                    if (event.srcElement.tagName == "IMG") {
+                        alert(clickmessage);
+                        return false;
+                    }
+                }
+            }
+            else if (document.layers) {
+                if (e.which == 3) {
+                    alert(clickmessage);
+                    return false;
+                }
+            }
+            else if (document.getElementById) {
+                if (e.which == 3 && e.target.tagName == "IMG") {
+                    alert(clickmessage)
+                    return false
+                }
+            }
+        }
+
+        function associateimages() {
+
+            for (i = 0; i < document.images.length; i++)
+                document.images.onmousedown = disableclick;
+        }
+
+        if (document.all || document.getElementById)
+            document.onmousedown = disableclick
+        else if (document.layers)
+            associateimages()
+
+
+        function DropDownHref(obj) {
+            var strUrl = $(obj).val();
+            window.open(strUrl, '_blank');
+        }
+    </script>
+</head>
+<body>
+<form name="aspnetForm" method="post" action="about.aspx?Mid=265" id="aspnetForm">
+    <div>
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTg2MTkwOTI0MA8WAh4GVG1wTmlkBQMyNjUWAmYPZBYCAgMPZBYCAgEPZBYSAgEPZBYEAgEPFgIeBFRleHQF9AM8bGk+PGEgdGFyZ2V0PSdfYmxhbmsnICB0aXRsZT0idHAiPjxpbWcgc3JjPSJVcExvYWQvaW1hZ2VzLzRlODE2MDE0LTIyYjEtNDUxNi1iN2NkLTE0NWQzZmU4MWE3NS5wbmciIHRpdGxlPSJ0cCIgLz50cDwvYT48L2xpPjxsaT48YSB0YXJnZXQ9J19ibGFuaycgIHRpdGxlPSJ0cCI+PGltZyBzcmM9IlVwTG9hZC9pbWFnZXMvYzI5MDMzYmQtM2FmNy00MTBkLTkyYmMtMThmZGM5MjcwYTlmLnBuZyIgdGl0bGU9InRwIiAvPnRwPC9hPjwvbGk+PGxpPjxhIHRhcmdldD0nX2JsYW5rJyAgdGl0bGU9InRwIj48aW1nIHNyYz0iVXBMb2FkL2ltYWdlcy8zM2EwNzAwNC1kMTAxLTQ2N2QtYjM5ZC1lMGM3NjNkMmY5MDAucG5nIiB0aXRsZT0idHAiIC8+dHA8L2E+PC9saT48bGk+PGEgdGFyZ2V0PSdfYmxhbmsnICB0aXRsZT0idHAiPjxpbWcgc3JjPSJVcExvYWQvaW1hZ2VzLzI5NTA4ZmM1LWZlNTktNDhiMi04MmEyLTk2NjNjYmRjMDcwYS5wbmciIHRpdGxlPSJ0cCIgLz50cDwvYT48L2xpPmQCAw8WAh8BBfkXPGxpIDEiPiA8YSAgY2xhc3M9ImdvIiAgaHJlZj0iSW5kZXguYXNweCI+6aaW6aG1PC9hPiAgPGJsb2NrcXVvdGU+IDx1bCBjbGFzcz0iQ2hpbGROYXZJbiI+ICAgICA8L3VsPiAgICAgPC9ibG9ja3F1b3RlPjwvbGk+PGxpIDIyNSI+IDxhICBjbGFzcz0iZ28iICBocmVmPSJhYm91dC5hc3B4P01pZD0yMzMiPue7temYs+mjjuiyjDwvYT4gIDxibG9ja3F1b3RlPiA8dWwgY2xhc3M9IkNoaWxkTmF2SW4iPjxsaT48YSBjbGFzcz0iRmlyc3QiIGhyZWY9ImFib3V0LmFzcHg/TWlkPTIzMyI+5Z+O5biC566A5LuLPC9hPjwvbGk+PGxpPjxhIGNsYXNzPSJGaXJzdCIgaHJlZj0iYWJvdXQuYXNweD9NaWQ9MjQ0Ij7mgIDml6flm77niYc8L2E+PC9saT48bGk+PGEgY2xhc3M9IkZpcnN0IiBocmVmPSJJbWdfdHAuYXNweD90eXBlPTMwJk1pZD0yNjYmSW5kZXg9MSI+56eR5oqA57u16ZizPC9hPjwvbGk+PGxpPjxhIGNsYXNzPSJGaXJzdCIgaHJlZj0iUGFseV9saXN0LmFzcHg/aWQ9MzgzJk1pZD0yNTIiPuinhumikeWcqOe6vzwvYT48L2xpPiAgICAgPC91bD4gICAgIDwvYmxvY2txdW90ZT48L2xpPjxsaSAxMjEiPiA8YSAgY2xhc3M9ImdvIiAgaHJlZj0iYWJvdXQuYXNweD9NaWQ9MjA0Ij7mnKzppobmpoLlhrU8L2E+ICA8YmxvY2txdW90ZT4gPHVsIGNsYXNzPSJDaGlsZE5hdkluIj48bGk+PGEgY2xhc3M9IkZpcnN0IiBocmVmPSJhYm91dC5hc3B4P01pZD0yMDQiPuacrOmmhueugOS7izwvYT48L2xpPjxsaT48YSBjbGFzcz0iRmlyc3QiIGhyZWY9ImFib3V0LmFzcHg/TWlkPTI1OSI+6IGM6IO96IGM6LSjPC9hPjwvbGk+PGxpPjxhIGNsYXNzPSJGaXJzdCIgaHJlZj0iYWJvdXQuYXNweD9NaWQ9MTg3Ij7pmJ/kvI3lu7rorr48L2E+PC9saT48bGk+PGEgY2xhc3M9IkZpcnN0IiBocmVmPSJhYm91dC5hc3B4P01pZD0xNjYiPummhuiXj+aho+ahiDwvYT48L2xpPjxsaT48YSBjbGFzcz0iRmlyc3QiIGhyZWY9ImFib3V0LmFzcHg/TWlkPTI2MCI+5Yi25bqm5bu66K6+PC9hPjwvbGk+PGxpPjxhIGNsYXNzPSJGaXJzdCIgaHJlZj0iYWJvdXQuYXNweD9NaWQ9MjYzIj7orr7lpIforr7mlr08L2E+PC9saT48bGk+PGEgY2xhc3M9IkZpcnN0IiBocmVmPSJhYm91dC5hc3B4P01pZD0yNjQiPuW8gOWPkeWIqeeUqDwvYT48L2xpPjxsaT48YSBjbGFzcz0iRmlyc3QiIGhyZWY9ImFib3V0LmFzcHg/TWlkPTI2NSI+6L6+5qCH6I635aWWPC9hPjwvbGk+PGxpPjxhIGNsYXNzPSJGaXJzdCIgaHJlZj0iYWJvdXQuYXNweD9NaWQ9Mjc1Ij7ogZTns7vmiJHku6w8L2E+PC9saT4gICAgIDwvdWw+ICAgICA8L2Jsb2NrcXVvdGU+PC9saT48bGkgMjY3Ij4gPGEgIGNsYXNzPSJnbyIgIGhyZWY9IkFyY2hpdmVTZWFyY2guYXNweD9NaWQ9Mjc2Ij7moaPmoYjmn6Xor6I8L2E+ICA8YmxvY2txdW90ZT4gPHVsIGNsYXNzPSJDaGlsZE5hdkluIj48bGk+PGEgY2xhc3M9IkZpcnN0IiBocmVmPSJBcmNoaXZlU2VhcmNoLmFzcHg/TWlkPTI3NiI+5Zyo57q/5p+l5qGjPC9hPjwvbGk+PGxpPjxhIGNsYXNzPSJGaXJzdCIgaHJlZj0iWVlDRF9DWC5hc3B4P01pZD0yODEiPumihOe6puafpeahozwvYT48L2xpPiAgICAgPC91bD4gICAgIDwvYmxvY2txdW90ZT48L2xpPjxsaSAyMjEiPiA8YSAgY2xhc3M9ImdvIiAgaHJlZj0iTmV3cy5hc3B4P01pZD0yMjEiPuaUv+WKoeWFrOW8gDwvYT4gIDxibG9ja3F1b3RlPiA8dWwgY2xhc3M9IkNoaWxkTmF2SW4iPjxsaT48YSBjbGFzcz0iRmlyc3QiIGhyZWY9Ik5ld3MuYXNweD9NaWQ9MjQ4Ij7lt6XkvZzliqjmgIE8L2E+PC9saT48bGk+PGEgY2xhc3M9IkZpcnN0IiBocmVmPSJOZXdzLmFzcHg/TWlkPTIyMiI+5Z+O5qGj5Yqo5oCBPC9hPjwvbGk+PGxpPjxhIGNsYXNzPSJGaXJzdCIgaHJlZj0iTmV3cy5hc3B4P01pZD0yMjMiPumHjeeCueW3peeoizwvYT48L2xpPjxsaT48YSBjbGFzcz0iRmlyc3QiIGhyZWY9Ik5ld3MuYXNweD9NaWQ9MjY4Ij7moaPmoYjlrqHmn6XlhazlkYo8L2E+PC9saT48bGk+PGEgY2xhc3M9IkZpcnN0IiBocmVmPSJOZXdzLmFzcHg/TWlkPTI2OSI+5Yy65Y6/5qGj5qGIPC9hPjwvbGk+ICAgICA8L3VsPiAgICAgPC9ibG9ja3F1b3RlPjwvbGk+PGxpIDExMCI+IDxhICBjbGFzcz0iZ28iICBocmVmPSJOZXdzLmFzcHg/TWlkPTExMCI+5pS/562W5rOV6KeEPC9hPiAgPGJsb2NrcXVvdGU+IDx1bCBjbGFzcz0iQ2hpbGROYXZJbiI+PGxpPjxhIGNsYXNzPSJGaXJzdCIgaHJlZj0iTmV3cy5hc3B4P01pZD0xMTUiPuWbveWutuazleinhDwvYT48L2xpPjxsaT48YSBjbGFzcz0iRmlyc3QiIGhyZWY9Ik5ld3MuYXNweD9NaWQ9MTc1Ij7lnLDmlrnms5Xop4Q8L2E+PC9saT4gICAgIDwvdWw+ICAgICA8L2Jsb2NrcXVvdGU+PC9saT48bGkgMjMxIj4gPGEgIGNsYXNzPSJnbyIgIGhyZWY9ImFib3V0LmFzcHg/TWlkPTIzMSI+5Yqe5LqL5oyH5Y2XPC9hPiAgPGJsb2NrcXVvdGU+IDx1bCBjbGFzcz0iQ2hpbGROYXZJbiI+PGxpPjxhIGNsYXNzPSJGaXJzdCIgaHJlZj0iTmV3cy5hc3B4P01pZD0yNTMiPuebuOWFs+WItuW6puWPiue7huWImTwvYT48L2xpPjxsaT48YSBjbGFzcz0iRmlyc3QiIGhyZWY9Ik5ld3MuYXNweD9NaWQ9MjU0Ij7kuJrliqHlt6XkvZzmtYHnqIs8L2E+PC9saT48bGk+PGEgY2xhc3M9IkZpcnN0IiBocmVmPSJEb3dubG9hZC5hc3B4P01pZD0yNTEiPuihqOagvOS4i+i9vTwvYT48L2xpPiAgICAgPC91bD4gICAgIDwvYmxvY2txdW90ZT48L2xpPjxsaSAyMzAiPiA8YSAgY2xhc3M9ImdvIiAgaHJlZj0iU2VuZC5hc3B4P01pZD0yNzAiPuS6kuWKqOS6pOa1gTwvYT4gIDxibG9ja3F1b3RlPiA8dWwgY2xhc3M9IkNoaWxkTmF2SW4iPjxsaT48YSBjbGFzcz0iRmlyc3QiIGhyZWY9IlNlbmQuYXNweD9NaWQ9MjcwIj7lnKjnur/lkqjor6I8L2E+PC9saT48bGk+PGEgY2xhc3M9IkZpcnN0IiBocmVmPSJTYWRjTGlzdC5hc3B4P01pZD0yNzEiPue9keS4iuiwg+afpTwvYT48L2xpPjxsaT48YSBjbGFzcz0iRmlyc3QiIGhyZWY9IkNvbGxlY3Rpb24uYXNweD9NaWQ9MjcyIj7lm77niYflvoHpm4Y8L2E+PC9saT4gICAgIDwvdWw+ICAgICA8L2Jsb2NrcXVvdGU+PC9saT5kAgMPFgIfAQUM6L6+5qCH6I635aWWZAIFDxYCHwEFvAE8c3Bhbj7lvZPliY3kvY3nva48L3NwYW4+77yaPGEgaHJlZj0iaW5kZXguYXNweCI+6aaW6aG1PC9hPiAmZ3Q7IDxhIGhyZWY9ImFib3V0LmFzcHg/TWlkPTIwNCIgdGFyZ2V0PSJfc2VsZiI+5pys6aaG5qaC5Ya1PC9hPiA+IDxhIGhyZWY9ImFib3V0LmFzcHg/TWlkPTI2NSIgdGFyZ2V0PSJfc2VsZiI+6L6+5qCH6I635aWWPC9hPmQCBw8WAh8BBQzovr7moIfojrflpZZkAgkPFgIfAQUY57u16Ziz5biC5Z+O5bu65qGj5qGI6aaGZAILDxYCHwEFCeeuoeeQhuWRmGQCDQ8WAh8BBQoyMDE2LTA2LTIwZAIPDxYCHwEFAjIxZAIRDxYCHwEF/w3miJHppobliIbliKvkuo4xOTky5bm05ZKMMTk5OOW5tOS4pOW6puiNo+iOt+WFqOWbveWfjuW7uuaho+ahiOW3peS9nOWFiOi/m+mbhuS9k+ensOWPt++8jOWPl+WIsOWbveWutuW7uuiuvumDqOeahOihqOW9sOWlluWKseOAguWkmuasoeWPl+WIsOWbm+W3neecgeW7uuWnlOOAgee7temYs+W4guaUv+W6nOOAgee7temYs+W4guW7uuWnlOOAgee7temYs+W4guaho+ahiOWxgOeahOihqOW9sOWlluWKse+8mg0KPGRpdj4mbmJzcDs8L2Rpdj4NCjxkaXY+MTk4OOW5tOiNo+iOt+WfjuW7uuaho+ahiOW3peS9nOWFiOi/m+WNleS9jeensOWPt++8jOWPl+WIsOW4guW7uuWnlOihqOW9sO+8mzwvZGl2Pg0KPGRpdj4mbmJzcDs8L2Rpdj4NCjxkaXY+MTk5MeW5tOiNo+iOt+aho+ahiOmmhuW3peS9nOWFiOi/m+WNleS9jeensOWPt++8jOWPl+WIsOW4guaho+ahiOWxgOihqOW9sO+8mzwvZGl2Pg0KPGRpdj4mbmJzcDs8L2Rpdj4NCjxkaXY+MTk5MuW5tOiNo+iOt+WFqOWbveWfjuW7uuaho+ahiOW3peS9nOWFiOi/m+mbhuS9k+ensOWPt++8jOWPl+WbveWutuW7uuiuvumDqOihqOW9sO+8mzwvZGl2Pg0KPGRpdj4mbmJzcDs8L2Rpdj4NCjxkaXY+MTk5NuW5tOiNo+iOt+Wbm+W3neecgeWFiOi/m+WfjuW7uuaho+ahiOmmhuensOWPt++8jOWPl+WIsOWbm+W3neecgeW7uuWnlOihqOW9sO+8m+WQjOW5tOaZi+WNh+S4uuecgeS6jOe6p+aho+ahiOmmhu+8mzwvZGl2Pg0KPGRpdj4mbmJzcDs8L2Rpdj4NCjxkaXY+MTk5OOW5tOWGjeasoeiNo+iOt+WFqOWbveWfjuW7uuaho+ahiOW3peS9nOWFiOi/m+mbhuS9k+ensOWPt++8jOWPl+WIsOWbveWutuW7uuiuvumDqOihqOW9sO+8m+WQjOW5tOiNo+iOt+Wbm+W3neecgeWfjuW7uuaho+ahiOW3peS9nOWFiOi/m+mbhuS9k+ensOWPt++8mzwvZGl2Pg0KPGRpdj4mbmJzcDs8L2Rpdj4NCjxkaXY+MTk5OeW5tOiNo+iOt+WIm+W7uuaWh+aYjuWNq+eUn+Wbreael+WPjOaLpeWfjuW4guWFiOi/m+WNleS9jeensOWPt++8jOWPl+WIsOW4guWnlOOAgeW4guaUv+W6nOihqOW9sO+8mzwvZGl2Pg0KPGRpdj4mbmJzcDs8L2Rpdj4NCjxkaXY+MjAwMOW5tOaZi+WNh+S4uuecgeS4gOe6p+aho+ahiOmmhu+8mzwvZGl2Pg0KPGRpdj4mbmJzcDs8L2Rpdj4NCjxkaXY+MjAwMeW5tOiNo+iOt+WFqOW4guaho+ahiOW3peS9nOWFiOi/m+mbhuS9k+ensOWPt++8jOWPl+WIsOW4guaUv+W6nOihqOW9sO+8m+WQjOW5tOiNo+iOt+WFiOi/m+WfuuWxguWFmue7hOe7h+OAgemihuWvvOePreWtkOWImyZsZHF1bzvlm5vlpb0mcmRxdW875rS75Yqo5YWI6L+b5Y2V5L2N56ew5Y+377ybPC9kaXY+DQo8ZGl2PiZuYnNwOzwvZGl2Pg0KPGRpdj4yMDAy5bm06KKr5biC5aeU44CB5biC5pS/5bqc5o6I5LqI5paH5piO5Y2V5L2N56ew5Y+377yb5ZCM5bm06I2j6I635Yib5bu65paH5piO44CB5Y2r55Sf44CB546v5L+d44CB5Zut5p6X44CB5peF5ri45Z+O5biC5bel5L2c5YWI6L+b5Y2V5L2N77yM5Y+X5biC5aeU5biC5pS/5bqc6KGo5b2wPC9kaXY+DQo8ZGl2PiZuYnNwOzwvZGl2Pg0KPGRpdj4yMDAz5bm05YaN5qyh6I2j6I635Yib5bu65paH5piO44CB5Y2r55Sf44CB546v5L+d44CB5Zut5p6X44CB5peF5ri45Z+O5biC5bel5L2c5YWI6L+b5Y2V5L2N56ew5Y+377yM5Y+X5biC5aeU5biC5pS/5bqc6KGo5b2w77ybPC9kaXY+DQo8ZGl2PiZuYnNwOzwvZGl2Pg0KPGRpdj4yMDAz5bm0MTLmnIjojaPojrflm5vlt53nnIHmoaPmoYjlt6XkvZzkvJjnp4Dpm4bkvZPnp7Dlj7fvvIzlj5fliLDlm5vlt53nnIHmoaPmoYjlsYDooajlvbDjgII8L2Rpdj5kZGUsqjr234d0pCxjBW7m7uuht9msw5fwnl+nVhafjdqp">
+    </div>
+    <div>
+        <!--3个内页tp-->
+        <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="js/slides-1.1.1-min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+    $(function () {
+        $('#sildes').olvSlides(
+            {
+                thumb: true,
+                thumbPage: true,
+                thumbDirection: "Y",
+                effect: 'fade'
+
+            }
+        );
+    })
+</script>
+        <script type="text/javascript">
+    var myFocus = {
+        //Design By Koen @ 2010.8.x
+        //http://hi.baidu.com/koen_li
+        $: function (id) { return document.getElementById(id); },
+        $$: function (tag, obj) { return (typeof obj == 'object' ? obj : this.$(obj)).getElementsByTagName(tag); },
+        style: function (obj, style) { return (+[1, ]) ? window.getComputedStyle(obj, null)[style] : obj.currentStyle[style]; },//getStyle简化版
+        easeOut: function (t, b, c, d) { return -c * ((t = t / d - 1) * t * t * t - 1) + b; },
+        move: function (obj, prop, val, type, spd, fn) {//运动函数，spd为运动需要的时间，时间越大速度越小
+            var t = 0, b = parseInt(this.style(obj, prop)), c = val - b, d = spd || 50, st = type, m = c > 0 ? 'ceil' : 'floor';
+            if (obj[prop + 'Timer']) clearInterval(obj[prop + 'Timer']);
+            obj[prop + 'Timer'] = setInterval(function () {
+                if (t < d) { obj.style[prop] = Math[m](myFocus[st](++t, b, c, d)) + 'px'; }
+                else { clearInterval(obj[prop + 'Timer']); fn && fn.call(obj); }
+            }, 10); return this;
+        },
+        addList: function (obj, cla, x) {//生成HMTL,cla为列表的class,其中封装有:cla='txt'(生成alt文字),cla='num'(生成按钮数字),cla='thumb'(生成小图)
+            var s = [], n = x || this.$$('li', this.$$('ul', obj)[0]).length, num = cla.length;
+            for (var j = 0; j < num; j++) {
+                s.push('<ul class=' + cla[j] + '>');
+                for (var i = 0; i < n; i++) { s.push('<li>' + (cla[j] == 'num' ? (i + 1) : (cla[j] == 'txt' ? this.$$('li', obj)[i].innerHTML.replace(/\<img.*?\>/i, this.$$('img', obj)[i].alt) : (cla[j] == 'thumb' ? '<img src=' + (this.$$('img', obj)[i].getAttribute("thumb") || this.$$('img', obj)[i].src) + ' />' : ''))) + '<span></span></li>') };
+                s.push('</ul>');
+            }; obj.innerHTML += s.join('');
+        },
+        setting: function (par) {
+            if (window.attachEvent) { window.attachEvent('onload', function () { myFocus[par.style](par) }); }
+            else { window.addEventListener('load', function () { myFocus[par.style](par) }, false); }
+        },
+        mF_liuzg: function (par) {
+            var box = this.$(par.id), boxH = box.offsetHeight, t = par.time * 1000;
+            this.addList(box, ['txt-bg', 'txt', 'num']);
+            var pic = this.$$('li', this.$$('ul', box)[0]), n = pic.length;
+            var c = boxH % par.chip ? 8 : par.chip, h = boxH / c, pics = [];
+            for (var i = 0; i < c; i++) {
+                pics.push('<li><p>')
+                for (var j = 0; j < n; j++) pics.push(pic[j].innerHTML);
+                pics.push('</p></li>')
+            }
+            this.$$('ul', box)[0].innerHTML = pics.join('');
+            var ul = this.$$('ul', box), txt = this.$$('li', ul[2]), btn = this.$$('li', ul[3]), pic = this.$$('li', ul[0]);
+            for (var i = 0; i < c; i++) {//初始化样式设置
+                this.$$('p', pic[i])[0].style.top = -i * h + 'px';
+                pic[i].style.height = h + 'px';
+                this.$$('p', pic[i])[0].style.height = boxH * c + 'px';
+            }
+            var index = 0;//开始显示的序号
+            box.removeChild(this.$$('div', box)[0]);
+            var run = function (idx) {
+                var tt = par.type == 4 ? Math.round(1 + (Math.random() * (3 - 1))) : par.type;//效果选择
+                btn[index].className = '';
+                txt[index].style.display = 'none';
+                if (index == n - 1) index = -1;
+                var N = idx != undefined ? idx : index + 1;
+                var spd = tt == 2 ? 20 : (tt == 1 ? 80 : Math.round(20 + (Math.random() * (80 - 20))));
+                for (var i = 0; i < c; i++) {
+                    if (tt == 3) spd = Math.round(20 + (Math.random() * (80 - 20)));
+                    myFocus.move(myFocus.$$('p', pic[i])[0], 'top', -N * c * h - i * h, 'easeOut', spd);
+                    spd = tt == 2 ? spd + 10 : (tt == 1 ? spd - 10 : spd);
+                }
+                btn[N].className = 'current';
+                txt[N].style.display = 'block';
+                index = N;
+            }
+            run(index);
+            var auto = setInterval(function () { run() }, t);
+            for (var j = 0; j < n; j++) {
+                btn[j].j = j;
+                btn[j].onclick = function () { if (!this.className) run(this.j) }
+            }
+            box.onmouseover = function () { clearInterval(auto); }
+            box.onmouseout = function () { auto = setInterval(function () { run() }, t); }
+            for (var i = 0, lk = this.$$('a', box), ln = lk.length; i < ln; i++) lk[i].onfocus = function () { this.blur(); }//去除虚线框
+        }
+    };
+    myFocus.setting({
+        style: 'mF_liuzg',//style为风格样式，
+        id: 'myFocus',//焦点图ID
+        chip: 8,//图片切片数量，能被焦点图的高整除才有效，默认为8片
+        type: 4,//切片效果，1为甩头，2为甩尾，3为凌乱，4为随机效果
+        time: 4//每帧图片时间间隔
+    });//更多样式设置留意myFocus正式版
+</script>
+        <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+        <!--3个JS图片滚动-->
+        <script type="text/javascript" src="js/jcarousellite.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript" src="js/lanrenzhijia.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/lanrenzhijia.css">
+        <title>绵阳市城市建设档案馆</title>
+        <div id="box">
+            <img class="csimg" src="../images/lanrenzhijia.png">
+            <span class="title"><img src="images/gfwx.jpg"></span>
+        </div>
+        <script type="text/javascript">
+    function SetHome(obj, vrl)
+    {
+        try {
+            obj.style.behavior = 'url(#default#homepage)'; obj.setHomePage(vrl);
+        }
+        catch (e) {
+            if (window.netscape) {
+                try {
+                    netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                }
+                catch (e) {
+                    alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                }
+                var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                prefs.setCharPref('browser.startup.homepage', vrl);
+            } else {
+                alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入：" + vrl + "点击确定。");
+            }
+        }
+    }
+
+    // 加入收藏 兼容360和IE6
+    function shoucang(sTitle, sURL) {
+        try {
+            window.external.addFavorite(sURL, sTitle);
+        }
+        catch (e) {
+            try {
+                window.sidebar.addPanel(sTitle, sURL, "");
+            }
+            catch (e) {
+                alert("加入收藏失败，请使用Ctrl+D进行添加");
+            }
+        }
+    }
+</script>
+        <div class="clear"></div>
+        <div class="dbht"></div>
+        <!--slider-->
+        <div class="lolo"></div>
+        <div class="sixteen">
+            <div class="slider">
+                <ul class="rslides" id="slider3">
+                    <li><a target="_blank" title="tp"><img src="UpLoad/images/4e816014-22b1-4516-b7cd-145d3fe81a75.png" title="tp">tp</a></li>
+                    <li><a target="_blank" title="tp"><img src="UpLoad/images/c29033bd-3af7-410d-92bc-18fdc9270a9f.png" title="tp">tp</a></li>
+                    <li><a target="_blank" title="tp"><img src="UpLoad/images/33a07004-d101-467d-b39d-e0c763d2f900.png" title="tp">tp</a></li>
+                    <li><a target="_blank" title="tp"><img src="UpLoad/images/29508fc5-fe59-48b2-82a2-9663cbdc070a.png" title="tp">tp</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--db end-->
+        <div class="clear"></div>
+        <!--MutiNav-->
+        <div id="MutiNav">
+            <div class="nav">
+                <ul class="multiUl">
+                    <li 1"> <a class="go" href="Index.aspx">首页</a>
+                    <blockquote>
+                        <ul class="ChildNavIn">
+                        </ul>
+                    </blockquote></li>
+                    <li 225"> <a class="go" href="about.aspx?Mid=233">绵阳风貌</a>
+                    <blockquote>
+                        <ul class="ChildNavIn">
+                            <li><a class="First" href="about.aspx?Mid=233">城市简介</a></li>
+                            <li><a class="First" href="about.aspx?Mid=244">怀旧图片</a></li>
+                            <li><a class="First" href="Img_tp.aspx?type=30&amp;Mid=266&amp;Index=1">科技绵阳</a></li>
+                            <li><a class="First" href="Paly_list.aspx?id=383&amp;Mid=252">视频在线</a></li>
+                        </ul>
+                    </blockquote></li>
+                    <li 121"> <a class="go" href="about.aspx?Mid=204">本馆概况</a>
+                    <blockquote>
+                        <ul class="ChildNavIn">
+                            <li><a class="First" href="about.aspx?Mid=204">本馆简介</a></li>
+                            <li><a class="First" href="about.aspx?Mid=259">职能职责</a></li>
+                            <li><a class="First" href="about.aspx?Mid=187">队伍建设</a></li>
+                            <li><a class="First" href="about.aspx?Mid=166">馆藏档案</a></li>
+                            <li><a class="First" href="about.aspx?Mid=260">制度建设</a></li>
+                            <li><a class="First" href="about.aspx?Mid=263">设备设施</a></li>
+                            <li><a class="First" href="about.aspx?Mid=264">开发利用</a></li>
+                            <li><a class="First" href="about.aspx?Mid=265">达标获奖</a></li>
+                            <li><a class="First" href="about.aspx?Mid=275">联系我们</a></li>
+                        </ul>
+                    </blockquote></li>
+                    <li 267"> <a class="go" href="ArchiveSearch.aspx?Mid=276">档案查询</a>
+                    <blockquote>
+                        <ul class="ChildNavIn">
+                            <li><a class="First" href="ArchiveSearch.aspx?Mid=276">在线查档</a></li>
+                            <li><a class="First" href="YYCD_CX.aspx?Mid=281">预约查档</a></li>
+                        </ul>
+                    </blockquote></li>
+                    <li 221"> <a class="go" href="News.aspx?Mid=221">政务公开</a>
+                    <blockquote>
+                        <ul class="ChildNavIn">
+                            <li><a class="First" href="News.aspx?Mid=248">工作动态</a></li>
+                            <li><a class="First" href="News.aspx?Mid=222">城档动态</a></li>
+                            <li><a class="First" href="News.aspx?Mid=223">重点工程</a></li>
+                            <li><a class="First" href="News.aspx?Mid=268">档案审查公告</a></li>
+                            <li><a class="First" href="News.aspx?Mid=269">区县档案</a></li>
+                        </ul>
+                    </blockquote></li>
+                    <li 110"> <a class="go" href="News.aspx?Mid=110">政策法规</a>
+                    <blockquote>
+                        <ul class="ChildNavIn">
+                            <li><a class="First" href="News.aspx?Mid=115">国家法规</a></li>
+                            <li><a class="First" href="News.aspx?Mid=175">地方法规</a></li>
+                        </ul>
+                    </blockquote></li>
+                    <li 231"> <a class="go" href="about.aspx?Mid=231">办事指南</a>
+                    <blockquote>
+                        <ul class="ChildNavIn">
+                            <li><a class="First" href="News.aspx?Mid=253">相关制度及细则</a></li>
+                            <li><a class="First" href="News.aspx?Mid=254">业务工作流程</a></li>
+                            <li><a class="First" href="Download.aspx?Mid=251">表格下载</a></li>
+                        </ul>
+                    </blockquote></li>
+                    <li 230"> <a class="go" href="Send.aspx?Mid=270">互动交流</a>
+                    <blockquote>
+                        <ul class="ChildNavIn">
+                            <li><a class="First" href="Send.aspx?Mid=270">在线咨询</a></li>
+                            <li><a class="First" href="SadcList.aspx?Mid=271">网上调查</a></li>
+                            <li><a class="First" href="Collection.aspx?Mid=272">图片征集</a></li>
+                        </ul>
+                    </blockquote></li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+            var mst;
+            jQuery(".multiUl li").hover(function () {
+                var curItem = jQuery(this);
+                mst = setTimeout(function () {//延时触发
+                    curItem.find("blockquote").slideDown('fast');
+                    mst = null;
+                });
+            }, function () {
+                if (mst != null) clearTimeout(mst);
+                jQuery(this).find("blockquote").slideUp('fast');
+            });
+        </script>
+        </div>
+        <!--MutiNav end-->
+        <!--content-->
+        <div class="about">
+            <div class="lbbt">
+                <strong>达标获奖</strong>
+                <span><span>当前位置</span>：<a href="index.aspx">首页</a> &gt; <a href="about.aspx?Mid=204" target="_self">本馆概况</a> &gt; <a href="about.aspx?Mid=265" target="_self">达标获奖</a></span>
+            </div>
+            <div class="zwnr">
+                <h2> 达标获奖 </h2>
+                <div class="wzly">
+                    <span>文章来源：绵阳市城建档案馆</span>
+                    <span>作&nbsp;者：管理员</span>
+                    <span>发布日期：2016-06-20</span>
+                    <span>浏览次数：21次</span>
+                    <div class="bottom_03">
+                        <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                            <a class="bds_qzone"></a>
+                            <a class="bds_tsina"></a>
+                            <a class="bds_tqq"></a>
+                            <a class="bds_renren"> </a>
+                            <a class="bds_t163"></a>
+                            <span class="bds_more"></span>
+                        </div>
+                    </div>
+                    <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6705750"></script>
+                    <script type="text/javascript" id="bdshell_js"></script>
+                    <script type="text/javascript">
+                    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000)
+                </script>
+                </div>
+                <div class="content_wz">
+                    <p> 我馆分别于1992年和1998年两度荣获全国城建档案工作先进集体称号，受到国家建设部的表彰奖励。多次受到四川省建委、绵阳市政府、绵阳市建委、绵阳市档案局的表彰奖励： </p>
+                    <div>
+                        &nbsp;
+                    </div>
+                    <div>
+                        1988年荣获城建档案工作先进单位称号，受到市建委表彰；
+                    </div>
+                    <div>
+                        &nbsp;
+                    </div>
+                    <div>
+                        1991年荣获档案馆工作先进单位称号，受到市档案局表彰；
+                    </div>
+                    <div>
+                        &nbsp;
+                    </div>
+                    <div>
+                        1992年荣获全国城建档案工作先进集体称号，受国家建设部表彰；
+                    </div>
+                    <div>
+                        &nbsp;
+                    </div>
+                    <div>
+                        1996年荣获四川省先进城建档案馆称号，受到四川省建委表彰；同年晋升为省二级档案馆；
+                    </div>
+                    <div>
+                        &nbsp;
+                    </div>
+                    <div>
+                        1998年再次荣获全国城建档案工作先进集体称号，受到国家建设部表彰；同年荣获四川省城建档案工作先进集体称号；
+                    </div>
+                    <div>
+                        &nbsp;
+                    </div>
+                    <div>
+                        1999年荣获创建文明卫生园林双拥城市先进单位称号，受到市委、市政府表彰；
+                    </div>
+                    <div>
+                        &nbsp;
+                    </div>
+                    <div>
+                        2000年晋升为省一级档案馆；
+                    </div>
+                    <div>
+                        &nbsp;
+                    </div>
+                    <div>
+                        2001年荣获全市档案工作先进集体称号，受到市政府表彰；同年荣获先进基层党组织、领导班子创“四好”活动先进单位称号；
+                    </div>
+                    <div>
+                        &nbsp;
+                    </div>
+                    <div>
+                        2002年被市委、市政府授予文明单位称号；同年荣获创建文明、卫生、环保、园林、旅游城市工作先进单位，受市委市政府表彰
+                    </div>
+                    <div>
+                        &nbsp;
+                    </div>
+                    <div>
+                        2003年再次荣获创建文明、卫生、环保、园林、旅游城市工作先进单位称号，受市委市政府表彰；
+                    </div>
+                    <div>
+                        &nbsp;
+                    </div>
+                    <div>
+                        2003年12月荣获四川省档案工作优秀集体称号，受到四川省档案局表彰。
+                    </div>
+                    <p></p>
+                </div>
+                <div class="gbdy">
+                    <a href="javascript:window.print();" title="打印本页">打印本页</a>
+                    <a class="gbby" href="javascript:window.close();" title="关闭本页">关闭本页</a>
+                </div>
+            </div>
+        </div>
+        <!--content end-->
+        <script language="javascript">
+    function SetHome(obj, vrl) {
+        try {
+            obj.style.behavior = 'url(#default#homepage)'; obj.setHomePage(vrl);
+        }
+        catch (e) {
+            if (window.netscape) {
+                try {
+                    netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+                }
+                catch (e) {
+                    alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+                }
+                var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
+                prefs.setCharPref('browser.startup.homepage', vrl);
+            } else {
+                alert("您的浏览器不支持，请按照下面步骤操作：1.打开浏览器设置。2.点击设置网页。3.输入：" + vrl + "点击确定。");
+            }
+        }
+    }
+    // 加入收藏 兼容360和IE6
+    function shoucang(sTitle, sURL) {
+        try {
+            window.external.addFavorite(sURL, sTitle);
+        }
+        catch (e) {
+            try {
+                window.sidebar.addPanel(sTitle, sURL, "");
+            }
+            catch (e) {
+                alert("加入收藏失败，请使用Ctrl+D进行添加");
+            }
+        }
+    }
+</script>
+        <div class="foot">
+            <div class="zczb">
+                版权所有：绵阳市城建档案管理处&nbsp; 绵阳市城建档案馆
+                <span class="zb">&nbsp;&nbsp;&nbsp;&nbsp;地址：绵阳市红星街94号 &nbsp;&nbsp;&nbsp;&nbsp;蜀ICP备05015261号</span>
+                <span class="fwtj">您是本站第<strong>113852</strong>位访客</span>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
