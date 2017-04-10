@@ -17,6 +17,8 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -148,11 +150,56 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     };
 
+    /**
+     * 抓取 https://www.tenor.co/ 中的实时热门Gif搜索关键字
+     */
+    private static class TenorTrendingRunnable implements Runnable {
+        private int id;
+        private OnParserFinishListener onParserFinishListener;
+
+        public TenorTrendingRunnable(int id, OnParserFinishListener onParserFinishListener) {
+            this.id = id;
+            this.onParserFinishListener = onParserFinishListener;
+        }
+
+        @Override
+        public void run() {
+            try {
+                Document document = Jsoup.connect("https://www.tenor.co/").get();
+                Elements elements = document.getElementsByClass("related-tag");
+                List<String> tagList = new ArrayList<>();
+                for (Element element : elements) {
+                    Elements name = element.getElementsByClass("name");
+                    for (Element element1 : name) {
+                        String related_tag = element1.text();
+                        tagList.add(related_tag);
+                    }
+                }
+                KLog.e(tagList.toString());
+                if (!tagList.isEmpty()) {
+                    onParserFinishListener.onFinish(id, tagList);
+                    onParserFinishListener = null;
+                }
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.buttonBtn:
-                mCachedThreadPool.submit(runnable);
+                TenorTrendingRunnable trendingRunnable = new TenorTrendingRunnable(123, new OnParserFinishListener() {
+                    @Override
+                    public void onFinish(int id, List list) {
+                        KLog.e(list.toString());
+                    }
+                });
+                mCachedThreadPool.submit(trendingRunnable);
+
+//                mCachedThreadPool.submit(runnable);
                 break;
             case R.id.buttonBtn1:
                 String s = mEditText.getText().toString();
@@ -166,5 +213,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             default:
                 break;
         }
+    }
+
+    public interface OnParserFinishListener {
+        void onFinish(int id, List list);
     }
 }
